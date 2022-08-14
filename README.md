@@ -11,13 +11,13 @@ pip install -r requirements.txt
 
 ### Inference
 
-First, download a pretrained model from the YOLOv6 [release](https://github.com/meituan/YOLOv6/releases/tag/0.1.0)
+First, download a pretrained model named "yolov6s.pt" [here](https://1drv.ms/u/s!Asxoawb369ildajMmq6kJhz9oZE?e=gdwBdL)
 
 Second, run inference with `tools/infer.py`
 
 ```shell
 python tools/infer.py --weights yolov6s.pt --source img.jpg / imgdir
-                                yolov6n.pt
+                                
 ```
 
 ### Training
@@ -52,5 +52,5 @@ Reproduce mAP on COCO val2017 dataset
 
 ```shell
 python tools/eval.py --data data/coco.yaml --batch 32 --weights yolov6s.pt --task val
-                                                                yolov6n.pt
+                                                                
 ```
